@@ -33,6 +33,8 @@ jobs:
         env:
           BACKEND_URL: /action-publish-test
       - run: yarn export
+        env:
+          BACKEND_URL: /action-publish-test
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.5.7
