@@ -35,6 +35,11 @@ jobs:
       - run: yarn export
         env:
           NEXTJS_BACKEND_URL: /action-publish-test
+      - name: action-test
+        uses: ./
+        id: hello-world-docker-action
+        with:
+          who-to-greet: 'heechul'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.5.7
