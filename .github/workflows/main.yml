@@ -37,8 +37,8 @@ jobs:
           NEXTJS_BACKEND_URL: /action-publish-test
       - uses: actions/checkout@v2
       - name: action-test
-        uses: ./
-        id: hello-world-docker-action
+        uses: .github/hello-world-docker-action
+        id: test-action
         with:
           who-to-greet: 'heechul'
 
