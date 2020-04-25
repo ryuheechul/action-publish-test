@@ -35,6 +35,7 @@ jobs:
       - run: yarn export
         env:
           NEXTJS_BACKEND_URL: /action-publish-test
+      - uses: actions/checkout@v2
       - name: action-test
         uses: ./
         id: hello-world-docker-action
