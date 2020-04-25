@@ -32,11 +32,9 @@ jobs:
       - run: yarn build
         env:
           NEXTJS_BACKEND_URL: /action-publish-test
-          BASE_PATH : /action-publish-test
       - run: yarn export
         env:
           NEXTJS_BACKEND_URL: /action-publish-test
-          BASE_PATH : /action-publish-test
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.5.7
